@@ -23,8 +23,10 @@ print(hourse, minits, second, sep=":")
 print("Задание №3")
 
 n = int(input("Введите число "))
-n = n + (n * 11) + (n * 111)
-print(n)
+num1 = str(n) + str(n)
+num2 = str(n) + str(n) +str(n)
+summ = n + int(num1) + int(num2)
+print(summ)
 
 print("Задание №4")
 
