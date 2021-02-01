@@ -11,3 +11,9 @@ def my_func(x, y):
 
 print(my_func(3, -2))
 
+
+def func():
+    x = int(input("first numbers: "))
+    y = int(input("second number: "))
+    return pow(x, y)
+print(func())
