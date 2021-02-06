@@ -11,3 +11,12 @@ from math import factorial
 def generation():
     for el in count(1):
         yield factorial(el)
+
+generait = generation()
+x=0
+for j in generait:
+    if x < 5:
+        print(j)
+        x+=1
+    else:
+        break
