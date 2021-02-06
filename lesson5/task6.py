@@ -12,7 +12,10 @@
 # Пример словаря:
 # {“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
 
-with open('task6.txt', 'r', encoding='utf8') as f:
-    study_list = f.readlines()
-    print(study_list)
-    summ_time = {}
+with open('task6.txt', 'r', encoding='utf8') as file:
+    study = file.readlines()
+    lessons = {}
+    for line in study:
+        inf = line.replace('(', ' ').split()
+        lessons[inf[0][:-1]] = sum(int(i) for i in inf if i.isdigit())
+    print(f'Общее количество часов по предмету: \n{lessons}')
